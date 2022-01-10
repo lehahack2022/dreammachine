@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <title>The Dream Machine</title>
+</head>
+
+<body>
+    <script src="scripts.js"></script>
+    <h1>Welcome to the Dream Machine</h1>
+    <input type="text" placeholder="Conceptualise this" id="dream-input"></input>
+    <button id="dream-go" onclick="makeDream()">Create dream</button>
+    <p id="conceptualised-text" style="display: none">You have conceptualised a dream about...</p>
+    <p id="dream-stage"></p>
+    <div id="created-dream-div" class="fade-in-text">
+        <p id="created-dream"></p>
+    </div>
+    <p id="dream-meaning" style="display: none">Which means...</p>
+    <div id="dream-meaning-div">
+        <p id="symbol-1"></p>
+        <p id="symbol-2"></p>
+        <p id="symbol-3"></p>
+        <p id="secret-concepts">
+            🌙:moon:Generally, dreaming about the moon represents a feminine side, a strong intuition, or sometimes a
+            mother. On the other hand, a moon can also be related to one's emotions and varying moods. You might want to
+            take your dream as a warning that you should start looking after your own well-being.|
+            🌵:cactus:Dreaming of a cactus can represent an isolated personality. You may be neglecting your social or
+            family relationships. On the other hand, the plant also shows your desire to prevent others from harming
+            you. You may want to protect yourself, or avoid being touched.|
+            🐅:tiger:The tiger is a symbol of ferocity. It is also a spirit animal that represents the feeling of raw
+            emotions and power. The tiger is a very primal animal that represents our primal nature of uncertainty and
+            unpredictability. A tiger can also indicate that your future plans will change unexpectedly.|
+            🎭:masks:A mask indicates a desire to hide from others. Perhaps there is an aspect of your life that you are
+            ashamed of, or that you feel is likely to be misunderstood. If you dream of wearing a mask when interacting
+            with a specific person, this signifies that you should be careful of what you reveal to them, as they are
+            not trustworthy.|
+            🍺:beer:When you dream about beer, it generally signifies feelings of happiness or relaxation. Perhaps you
+            need more of this in your waking life if you have been working too hard lately. Try to put your worries to
+            one side and enjoy your free time.|
+            🍉:melon:When you dream of a melon, it may mean that you have an emphasised need for physical pleasures
+            that you probably lack in your life. This dream can also symbolise problems that are affecting your personal
+            relationships.|
+            🍰:cake:If cake is present in your dream, it is usually a positive sign about the people in your life and
+            the values you hold dearest. While cake in your dreams can sometimes be a sign of overindulgence, they are
+            generally positive and well-meaning.|
+            🌞:sun:The sun is a symbol of vitality. Dreaming of the sun is a sign of hope, which indicates your desires
+            will come to fruition and you should be confident about your future. If you have a plan in your mind, act it
+            out.|
+            💰:money:To dream of money represents the power to attain goals or objectives. The objectives can be
+            psychological, emotional, or achieving desired experiences. You are able to think, feel, or do what you want
+            in life. Know your self-worth.|
+            👽:alien:An alien can represent a part of you which lives in your unconscious mind, and this dream is a way
+            of exploring that part of yourself. Within this dream, you are conscious enough to recognise the unfamiliar
+            aspect of yourself enough that your subconscious makes it manifest as something strange.|
+            🚌:bus:A dream about a bus is a reflection of your life. It symbolises the feeling of being on a very long
+            journey in which things are finally falling into place. This dream encourages you to take pride in your
+            achievements and look forward to more exciting opportunities ahead of you.|
+            💋:kiss:To dream of kissing can symbolise approval, encouragement, or supportive behaviour. Kissing may also
+            represents approval or respect of capabilities. Alternatively, it could just be horny.|
+            💣:bomb:Dreaming of a bomb can symbolise the explosion of repressed feelings that are coming to the
+            surface. Often associated with unacknowledged anger, the bomb can symbolise how fear or anger are
+            sabotaging you. Your inner landscape is undergoing transformation.|
+            🐟:fish:Dreaming of fish represents your physical and spiritual alignment with the material world. These
+            dreams often represent your beliefs around value, self-worth, and abundance. Fish can appear to communicate
+            your deep beliefs on your mindset around success, your feelings around being deserving, and what you are
+            attracting into your physical world.|
+            🛀:bath:Dreaming of a bath symbolises physical and emotional cleansing. It may be a sign that you want to
+            clean your conscience, or that you would like your revitalise your state of mind. Perhaps you could have a
+            real life bath? You deserve it!|
+            🐌:snail:The snail may represent steady progress and movement towards your goals. It can indicate that you
+            don't allow others to pressure you. You have a good self-control and overcome difficulties with perseverance
+            and without complaining.|
+            🤡:afternoonwideboy:Like, comment, subscribe and surrender your soul to the Afternoon Wide Boys.|
+            🐀:rat:Before determing what your rat dream means, you must first ask yourself what you associate with rats.
+            Seeing a rat in your dream is a favourable omen for those who like rats. If you are wrong and dislike rats,
+            you should reconsider your opinion on rats.|
+            🌹:rose:Roses can be linked to passion, sexuality, romance and faithfulness. The dream might reflect how you
+            want someone to act towards you. Do you want a particular person to be passionate with you? Do you want a
+            certain person to feel a sexual desire towards you?|
+            🦞:lobster:When it comes to dreams, lobsters symbolise wonderful things. They can signify strength,
+            hidden capabilities and wealth. Consider yourself lucky, because dreams about lobsters are sure to bring you
+            good news.|
+            🏆:trophy:Dreaming about receiving a trophy is more than hitting the jackpot, it is a reward for your
+            perseverance and the effort that you are giving to a certain task. Achieving a trophy requires perseverance,
+            patience and dedication. You can expect to reap your rewards.|
+            🏀:sportball:When you dream of the sportball, it can be about both teamwork and cooperation. Perhaps you are
+            in a situation in your waking life that demands help from others in order for it to work. You may be
+            struggling on your own, so it might be time to ask for help.|
+            🎤:microphone:The microphone in your dream may suggest that you need to be more assertive and forceful with
+            your beliefs and opinions. Pay less attention to how people view you and speak your mind with confidence.
+        </p>
+    </div>
+</body>
+
+</html>

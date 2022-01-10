@@ -1,0 +1,12 @@
+1. create class with animation in it.  eg called fade-in, with animation in it. animation rule will be keyframes w name, from opacity 1 to opacity 0 
+ in script, below setting dreamstage, set dreamstage.
+
+
+        dreamStage.classList.add("fade-in");
+set timer
+
+
+
+fcfce8 for undertext [meaning explanation and emoji titles]
+
+move div bg colour to text not emoji, make emoiji fade in
