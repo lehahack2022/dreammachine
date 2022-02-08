@@ -59,18 +59,15 @@ input::placeholder{
     font-size: 50px;
 }
 
-#created-dream-div {
+#created-dream {
+    font-size: 45px;
     background: rgba(172, 172, 204, 0.35);
     width: 40%;
     margin-left: 30%;
     border-radius: 25px;
 }
 
-#created-dream {
-    font-size: 45px;
-}
-
-#dream-meaning-div {
+#dream-meaning-container {
     background: rgba(172, 172, 204, 0.35);
     width: 50%;
     margin-left: 25%;
@@ -84,4 +81,21 @@ input::placeholder{
 
 #secret-concepts {
     display: none;
+}
+
+.fade-icons {
+    animation: fade 3s;
+}
+
+.fade-text {
+    animation: fade 6.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

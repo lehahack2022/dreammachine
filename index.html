@@ -9,14 +9,15 @@
     <script src="scripts.js"></script>
     <h1>Welcome to the Dream Machine</h1>
     <input type="text" placeholder="Conceptualise this" id="dream-input"></input>
+    <script>
+        setUpInput()
+    </script>
     <button id="dream-go" onclick="makeDream()">Create dream</button>
     <p id="conceptualised-text" style="display: none">You have conceptualised a dream about...</p>
     <p id="dream-stage"></p>
-    <div id="created-dream-div" class="fade-in-text">
-        <p id="created-dream"></p>
-    </div>
+    <p id="created-dream"></p>
     <p id="dream-meaning" style="display: none">Which means...</p>
-    <div id="dream-meaning-div">
+    <div id="dream-meaning-container">
         <p id="symbol-1"></p>
         <p id="symbol-2"></p>
         <p id="symbol-3"></p>

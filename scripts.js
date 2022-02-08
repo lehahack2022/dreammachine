@@ -9,8 +9,17 @@ function stringToHash(string) {
     return hash;
 }
 
+function setUpInput() {
+    document.getElementById("dream-input").addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            makeDream()
+        }
+    });
+}
+
 function makeDream() {
     const dreamStage = document.getElementById("dream-stage");
+    const createdDream = document.getElementById("created-dream");
     const dreamInput = document.getElementById("dream-input").value;
     const secretConcepts = document.getElementById("secret-concepts").innerHTML;
     const concepts = secretConcepts.split("|");
@@ -27,10 +36,37 @@ function makeDream() {
     const thirdSymbol = concepts [Math.abs(stringToHash("" + stringToHash(dreamInput))) % concepts.length];
     console.log(firstSymbol); console.log(secondSymbol); console.log(thirdSymbol)
     dreamStage.innerHTML = firstSymbol.symbol + secondSymbol.symbol + thirdSymbol.symbol;
-    document.getElementById("conceptualised-text").style.display = "inherit";
-    document.getElementById("dream-meaning").style.display = "inherit";
-    document.getElementById("created-dream").innerHTML = `${firstSymbol.name} ${secondSymbol.name} ${thirdSymbol.name} `
+    const conceptText = document.getElementById("conceptualised-text");
+    const dreamMeaning = document.getElementById("dream-meaning")
+    const dreamMeaningContainer = document.getElementById("dream-meaning-container")
+    conceptText.style.display = "inherit";
+    dreamMeaning.style.display = "inherit";
+    dreamMeaningContainer.style.display = "inherit";
+    fadeIconElement(conceptText);
+    fadeIconElement(dreamStage);
+    fadeIconElement(createdDream);
+    fadeTextElement(dreamMeaning);
+    fadeTextElement(dreamMeaningContainer);
+    createdDream.innerHTML = `${firstSymbol.name} ${secondSymbol.name} ${thirdSymbol.name} `
     document.getElementById("symbol-1").innerHTML = `${firstSymbol.symbol} <br> ${firstSymbol.meaning}`
     document.getElementById("symbol-2").innerHTML = `${secondSymbol.symbol} <br> ${secondSymbol.meaning}`
     document.getElementById("symbol-3").innerHTML = `${thirdSymbol.symbol} <br> ${thirdSymbol.meaning}`
+}
+
+function fadeIconElement(element){
+    element.classList.remove("fade-icons");
+    element.style.opacity = 0;
+    setTimeout(()=>{
+        element.style.opacity = null;
+        element.classList.add("fade-icons")
+    },5);
+}
+
+function fadeTextElement(element){
+    element.classList.remove("fade-text");
+    element.style.opacity = 0;
+    setTimeout(()=>{
+        element.style.opacity = null;
+        element.classList.add("fade-text")
+    },5);
 }
