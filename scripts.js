@@ -10,7 +10,7 @@ function stringToHash(string) {
 }
 
 function setUpInput() {
-    document.getElementById("dream-input").addEventListener("keyup", function (event) {
+    document.getElementById("dream-input").addEventListener("keypress", function (event) {
         if (event.key === "Enter") {
             makeDream()
         }
